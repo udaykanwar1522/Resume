@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.text-center {
+    padding-top: 25px;
+}
+
+.name {
+    padding: 20px ;
+
+}
+.profile-pic {
+    width: 100%;
+    border-radius: 50%;
+    max-width: 150px;
+    
+}
+
+.linkedin_logo {
+    width: fit-content;
+    max-width: 25px;
+}
+
+.email_logo {
+    width: fit-content;
+    max-width: 27px;
+}
+
+.contact-info, .education, .expertise, .language {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size:xx-large;
+}
+
+.experience-item, .reference-item {
+    margin-bottom: 20px;
+}
+
+.experience-item h6, .reference-item h6 {
+    font-weight: bold;
+}
+
+@media (max-width: 767.98px) {
+    .contact-info, .education, .expertise, .language {
+        padding: 10px;
+    }
+    .profile-pic {
+        max-width: max-content;
+        max-height: max-content;
+    }
+}
