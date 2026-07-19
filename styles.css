@@ -1,60 +1,201 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1e293b;
+    background-color: #f1f5f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 24px auto;
+    background: #ffffff;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    padding: 0;
+}
+
+.row {
+    padding: 24px;
 }
 
 .text-center {
-    padding-top: 25px;
+    padding-top: 20px;
+    padding-bottom: 8px;
 }
 
 .name {
-    padding: 20px ;
-
+    padding: 12px 0 4px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
 }
+
+.text-center p {
+    color: #64748b;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 0;
+}
+
 .profile-pic {
     width: 100%;
+    max-width: 140px;
     border-radius: 50%;
-    max-width: 150px;
-    
-}
-
-.linkedin_logo {
-    width: fit-content;
-    max-width: 25px;
-}
-
-.email_logo {
-    width: fit-content;
-    max-width: 27px;
+    border: 3px solid #2563eb;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
 }
 
 .contact-info, .education, .expertise, .language {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    background: #ffffff;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+    border-left: 4px solid #2563eb;
+}
+
+.contact-info h5,
+.education h5,
+.expertise h5,
+.language h5 {
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 10px;
+    font-size: 1rem;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.contact-info p,
+.education p,
+.expertise p {
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+}
+
+.contact-info strong {
+    color: #1e293b;
+}
+
+.education ul,
+.language ul {
+    padding-left: 18px;
+    margin: 6px 0 0;
+    list-style: disc;
+}
+
+.education li,
+.language li {
+    font-size: 0.88rem;
+    margin-bottom: 4px;
+    color: #475569;
+}
+
+.expertise p {
+    margin-bottom: 8px;
+}
+
+.expertise p strong {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #1e293b;
+    text-decoration: none;
 }
 
 .section-title {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-size:xx-large;
+    margin: 0 0 14px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #1e293b;
+    border-bottom: 3px solid #2563eb;
+    padding-bottom: 6px;
 }
 
-.experience-item, .reference-item {
-    margin-bottom: 20px;
+.section-title:first-of-type {
+    margin-top: 0;
 }
 
-.experience-item h6, .reference-item h6 {
-    font-weight: bold;
+.col-lg-8 ul {
+    padding-left: 20px;
+    margin-bottom: 16px;
+    list-style: disc;
+}
+
+.col-lg-8 ul li {
+    margin-bottom: 8px;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: #475569;
+}
+
+.experience-item {
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.experience-item:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.experience-item h6 {
+    font-weight: 700;
+    color: #1e293b;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.experience-item p {
+    font-size: 0.9rem;
+    color: #2563eb;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.experience-item li {
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: #475569;
+    line-height: 1.55;
+}
+
+.linkedin_logo,
+.email_logo {
+    max-width: 22px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.linkedin_logo:hover,
+.email_logo:hover {
+    transform: scale(1.15);
+    opacity: 0.8;
 }
 
 @media (max-width: 767.98px) {
-    .contact-info, .education, .expertise, .language {
-        padding: 10px;
+    .container {
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
     }
+
+    .row {
+        padding: 16px;
+    }
+
+    .contact-info, .education, .expertise, .language {
+        padding: 12px;
+    }
+
     .profile-pic {
-        max-width: max-content;
-        max-height: max-content;
+        max-width: 100px;
     }
 }
