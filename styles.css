@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 24px auto;
     background: #ffffff;
     border: none;
@@ -85,6 +85,11 @@ body {
     color: #1e293b;
 }
 
+.degree-name {
+    color: #2563eb;
+    font-weight: 600;
+}
+
 .education ul,
 .language ul {
     padding-left: 18px;
@@ -149,6 +154,23 @@ body {
     padding-bottom: 0;
 }
 
+.summary-list {
+    padding-left: 18px;
+    margin-bottom: 0;
+    list-style: disc;
+}
+
+.summary-list li {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: #475569;
+    margin-bottom: 4px;
+}
+
+.summary-list li:last-of-type {
+    margin-bottom: 0;
+}
+
 .experience-item h6 {
     font-weight: 700;
     color: #1e293b;
@@ -156,11 +178,11 @@ body {
     margin-bottom: 8px;
 }
 
-.experience-item p {
-    font-size: 0.9rem;
+.experience-item .job-role {
+    font-size: 1.1rem;
+    font-weight: 700;
     color: #2563eb;
-    font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .experience-item li {
@@ -182,6 +204,27 @@ body {
     opacity: 0.8;
 }
 
+.cert-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.cert-badge {
+    width: 150px;
+    height: auto;
+}
+
+.cert-list {
+    width: 100%;
+}
+
+.cert-list p {
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+}
+
 @media (max-width: 767.98px) {
     .container {
         margin: 0;
@@ -201,5 +244,9 @@ body {
 
     .profile-pic {
         max-width: 100px;
+    }
+
+    .cert-badge {
+        width: 110px;
     }
 }
